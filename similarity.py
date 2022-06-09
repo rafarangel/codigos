@@ -71,7 +71,7 @@ def load_stopword(text):
     global stopwords
     with open(text, 'r') as file:
         stopwords = [line.strip() for line in file] 
-load_stopword('/content/drive/MyDrive/Data_Intell/Projetos/NLP/ALTU_Similaridade/stopwords.txt')
+load_stopword('stopwords.txt')
 
 def similar_words(data):
     comparation = data[['text1_cleaned', 'text2_cleaned']].values
